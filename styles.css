@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+}
+
+header {
+	background-color: #f9f9f9;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	height: 35px;
+}
+
+.quote {
+	margin-top: 50px;
+	padding: 0 2vw;
+}
+
+.quote h1 {
+	font-family: 'Calistoga', serif;
+	font-size: 55px;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+a {
+	display: block;
+	margin: 0 25px;
+	text-decoration: none;
+	color: #53721c;
+}
+
+.links a:hover {
+	color: #44510f;
+}
+
+footer {
+	margin-top: auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	color: #777;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 800px) {
+	.links {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.links a {
+		margin: 10px;
+	}
+}
